@@ -211,6 +211,6 @@ This MCP server requires sensitive banking credentials. Always:
 
 To add more functionality:
 
-1. Add new methods to the `InvestecClient` class in `utils.py` for additional API endpoints
-2. Create new tools using the `@mcp.tool()` decorator in `main.py`
-3. Add any additional methods or helpers needed for your specific use case
+1. Add new methods to the `InvestecClient` class in `src/utils.py` to interact with the desired Investec API endpoints.
+2. Create new tool functions within the relevant Python file inside the `src/tools/` directory (e.g., `src/tools/accounts.py` for account-related tools). Use the `@mcp.tool()` decorator for these functions.
+3. Import and register the new tool functions in `src/main.py`.

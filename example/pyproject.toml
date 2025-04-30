@@ -1,0 +1,13 @@
+[project]
+name = "investec-mcp-example" # Renamed project slightly to match dir
+version = "0.1.0"
+description = "Example for using the Investec MCP server" # Updated description
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-ai>=0.1.8",
+    "python-dotenv>=1.1.0",
+    "rich>=14.0.0", 
+]
+
+[tool.uv]
+# Optional: Add any uv specific configurations if needed
